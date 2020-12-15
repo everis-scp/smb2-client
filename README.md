@@ -13,7 +13,7 @@ The development is still at an experimental stage and should not be yet consider
 ## Installation
 
 ```bash
-npm install -S @marsaud/smb2
+npm install -S @codetakeo/smb2
 ```
 
 ## API
@@ -48,6 +48,7 @@ the parameter `options` accepts this list of attributes:
 - `username`: the username of the user that access the share
 - `password`: the password
 - `port` (optional): default `445`, the port of the SMB server
+- `socket` (optional): default `new net.Socket (from NodeJS Core)`, the socket used for communication with the SMB Server
 - `packetConcurrency` (optional): default `20`, the number of simultaneous packet when writing / reading data from the share
 - `autoCloseTimeout` (optional): default `10000`, the timeout in milliseconds before to close the SMB2 session and the socket, if set to `0` the connection will never be closed unless you do it
 
@@ -55,7 +56,7 @@ Example:
 
 ```javascript
 // load the library
-var SMB2 = require('@marsaud/smb2');
+var SMB2 = require('@codetakeo/smb2');
 
 // create an SMB2 instance
 var smb2Client = new SMB2({
@@ -373,6 +374,7 @@ smb2Client.open('path\\to\\the\\file', 'w', function(err, fd) {
 
 - [Benjamin Chelli](https://github.com/bchelli)
 - [Fabrice Marsaud](https://github.com/marsaud)
+- [Diego Garcia](https://github.com/codetakeo)
 
 ## References
 

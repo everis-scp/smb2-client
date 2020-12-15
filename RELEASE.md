@@ -2,6 +2,10 @@
 
 ## 0.14.0
 
+- Add Custom Socket Option
+
+## 0.14.0
+
 - smb2.truncate
 
 ## 0.4.0

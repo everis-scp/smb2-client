@@ -69,7 +69,7 @@ const tests = {
   readdirWithStats: function(client) {
     return client.readdir(dir, { stats: true }).then(function(result) {
       t.same(result.length, 1);
-      t.same(result[0].filename, 'file.txt');
+      t.same(result[0].name, 'file.txt');
       t.same(result[0].size, data.length);
       t.same(result[0].isDirectory(), false);
     });
@@ -175,7 +175,7 @@ asyncFn(function*() {
   const options = TOML.parse(
     fs.readFileSync(path.join(__dirname, 'config.toml'))
   );
-  options.autoCloseTimeout = 0;
+  options.autoCloseTimeout = 2000;
   const client = new Smb2(options);
   try {
     let result;
