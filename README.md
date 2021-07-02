@@ -13,7 +13,7 @@ The development is still at an experimental stage and should not be yet consider
 ## Installation
 
 ```bash
-npm install -S @codetakeo/smb2
+npm install -S @everis-scp/smb2
 ```
 
 ## API
@@ -56,7 +56,7 @@ Example:
 
 ```javascript
 // load the library
-var SMB2 = require('@codetakeo/smb2');
+var SMB2 = require('@everis-scp/smb2');
 
 // create an SMB2 instance
 var smb2Client = new SMB2({
@@ -374,7 +374,6 @@ smb2Client.open('path\\to\\the\\file', 'w', function(err, fd) {
 
 - [Benjamin Chelli](https://github.com/bchelli)
 - [Fabrice Marsaud](https://github.com/marsaud)
-- [Diego Garcia](https://github.com/codetakeo)
 
 ## References
 

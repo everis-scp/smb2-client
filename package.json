@@ -1,8 +1,8 @@
 {
-  "name": "@codetakeo/smb2",
+  "name": "@everis-scp/smb2",
   "description": "SMB2 Client",
-  "homepage": "https://github.com/codetakeo/smb2-client",
-  "version": "0.18.0",
+  "homepage": "https://github.com/everis-scp/smb2-client",
+  "version": "0.18.1",
   "engines": {
     "node": ">=5.10"
   },
@@ -12,14 +12,13 @@
     "url": "https://github.com/bchelli"
   },
   "contributors": [
-    "Fabrice Marsaud <fabrice.marsaud@vates.fr> (https://github.com/marsaud)",
-    "Diego Garcia <garcia.diego1197@gmail.com> (https://github.com/codetakeo)"
+    "Fabrice Marsaud <fabrice.marsaud@vates.fr> (https://github.com/marsaud)"
   ],
   "types": "index.d.ts",
   "main": "lib/smb2.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codetakeo/smb2-client"
+    "url": "https://github.com/everis-scp/smb2-client"
   },
   "dependencies": {
     "ntlm": "~0.1.1",
